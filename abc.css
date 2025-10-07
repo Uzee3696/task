@@ -1,0 +1,480 @@
+
+body{
+  margin:0;
+}
+.button{
+  background-color: white;
+  top:0;
+  height:6vh;
+  position:sticky;
+  z-index: 1;
+
+}
+
+.rightbutton{
+  display:flex;
+  flex-direction: row;
+  margin-left:auto;
+}
+
+.sbar:hover{
+  font-weight: bold;
+  cursor:pointer;
+}
+
+.Lbtn{
+  color:grey;
+  background-color: white;
+  border:none;
+  font-size: 1.7vh;
+  padding:5px;
+  transition:0.3s ease;
+  
+}
+
+.Lbtn:hover{
+  
+ font-weight: bold;
+  cursor:pointer;
+}
+
+.drop a{
+  margin-top:6px;
+  margin-bottom:6px;
+  margin-left:20px;
+  color:black;
+  display:block;
+  font-size:10px ;
+  text-decoration:none;
+}
+
+.drop .content{
+  margin-top:13px;
+  background-color: white;
+  display:none;
+  position:absolute;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px;
+  width:30vw;
+}
+
+.drop .content a{
+  font-size:1.6vh ;
+  font-weight: bold;
+}
+
+ .content a:hover{
+ 
+  font-weight:bolder;
+  cursor:pointer;
+}
+
+
+.drop .content1{
+  margin-top:13px;
+  background-color: white;
+  display:none;
+  z-index:2;
+  position:absolute;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px;
+  width:24vw;
+}
+
+.drop .content1 a{
+  font-size: 1.6vh;
+}
+
+.drop:hover .content1{
+  display:block;
+}
+
+
+
+ .sdiv{
+   top:0;
+   top:6vh;
+   background-color: white;
+   position:sticky;
+    border-bottom: 1px solid lightgrey;
+}
+
+#photosbtn{
+  font-size: 1.9vh;
+  background-color:white;
+  border:none;
+  font-weight:bolder;
+  cursor:pointer;
+  transition: scale 0.3s ease;
+}
+
+#photosbtn:hover{
+  transform:scale(1.5);
+  font-weight: bolder;
+  cursor:pointer;
+}
+
+#toggle:checked + .content{
+  display:block;
+}
+
+#tgle:checked + .content1{
+  display:block;
+}
+
+
+#searchbtn{
+  
+  border:none;
+  border-radius: 25px ;
+  width:100vw;
+  height:4vh;
+  font-size:1.8vh;
+  text-align: left;
+  color:grey;
+  gap:10px;
+  padding-top:5px;
+  margin-top:5px;
+  padding: 5px; 
+}
+
+#searchbtn:hover{ 
+  transform: scale(1.01);
+}
+
+#searchinput{
+  opacity: 0;
+  width:0;
+  height:0;
+  transition: all 0.3s ease;
+  border:1px solid lightgrey;
+  
+  font-size: 1.5vh;
+  outline: none;
+  margin-left: 10px;
+}
+
+#searchbtn:focus+#searchinput,
+#searchinput:focus{
+  opacity: 1;
+  width:70vw;
+  height:4vh;
+  border-radius: 12px;
+  border-color: skyblue;
+  box-shadow:0 0 5px rgba(0,123,255,0.3);
+}
+.sbar{
+  border:none;
+  font-size: 1.8vh;
+  text-decoration: none;
+  background-color:white;
+  color:grey;
+}
+
+
+
+
+
+
+.bar{
+  margin-top:3px;
+}
+.png{
+  margin:5px;
+  
+  width:8vw;
+  
+}
+
+.img{
+  margin : 5px;
+  
+  width:90vw;
+  margin-bottom:10px;
+}
+
+.likeslide{
+  margin-left:3vw;
+  display:flex;
+  align-items:center;
+  width:94vw;
+  
+}
+
+.lbt{
+ display:inline-block;
+  color:black;
+  align-content: center;
+  width:8vw;
+  height:5vh;
+  font-size:4vh;
+  cursor:pointer;
+  transition:0.3s ease;
+}
+
+.lbt:hover{
+  transform:scale(1.08);
+  
+}
+
+.rbt{
+ display:inline-block;
+  
+  transition:0.3s ease;
+  margin-left: 25px;
+  color:white;
+  background-color:black;
+  width:27vw;
+  height:3.5vh;
+  font-size: 2vh;
+  cursor:pointer;
+}
+
+.rbt:hover{
+  transform:scale(1.08);
+  
+}
+
+input[type="checkbox"]:checked + .lbt{
+  color:red;
+  transform:scale(1.15);
+}
+
+
+.lgn{
+  
+  width:100%;
+  background-color:white;
+  border-radius:8px;
+  height: 40px;
+  margin:5px;
+  
+}
+
+.title {
+ color: #5C6AC4;
+}
+
+@media screen and (min-width:800px){  
+ 
+  body{
+  display:inline-block;
+  flex-direction:row;
+  padding: 8px;
+  height:100vh;
+  width:100vw;
+}
+
+
+.rightbutton{
+  width: 100%;
+  float:left ;
+  
+  background-color:black;
+  display:flex;
+  flex-direction: column;
+  margin-top:auto;
+   padding-bottom:25px;
+   align-items: center;
+}
+
+
+
+.Lbtn{
+  padding:10px;
+  color:gold;
+  background-color: black;
+  border:none;
+  justify-content: center;
+  
+}
+
+.Lbtn:hover{
+ font-weight: bold;
+  cursor:pointer;
+}
+
+.drop .content{
+  margin-top:4px;
+  background-color:transparent;
+  display:block;
+  position:absolute;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px;
+  min-width:130px;
+}
+
+.content a{
+  display:block;
+ font-size:larger;
+  background-color: black;
+  color:gold;
+  padding:7px;
+}
+
+.content a:hover{
+ 
+  font-weight:bolder;
+  cursor:pointer;
+}
+
+
+
+.sdiv{
+    top:0;
+    position:sticky;
+    border-bottom: 1px solid lightgrey;
+}
+
+.button{
+  overflow:hidden;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color:black;
+  float:left;
+  position:fixed;
+  justify-content: flex-end;
+
+  flex-direction: column;
+  top:0;
+  left:0;
+  width:10vw;
+  height:100vh;
+  border-color: black;
+  align-items: center;
+  justify-content: center;
+ background-image: url(https://images.unsplash.com/photo-1499428665502-503f6c608263?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmxhY2slMjBhbmQlMjB3aGl0ZXxlbnwwfHwwfHx8MA%3D%3D);
+  background-repeat: no-repeat;
+  background-position:12% center;
+  background-size: cover;
+}
+.boom{
+  float:right;
+  width:90vw;
+  
+}
+
+.drop:hover .content1{  
+  display: none;
+}
+
+
+
+#photosbtn{
+  margin-top:5px;
+  background-color:transparent;
+  border:none;
+  color:gold;
+  font-size:2.7vh;
+  font-weight:bold;
+  cursor:default
+}
+
+#searchbtn{
+  border:none;
+  border-radius: 25px ;
+  width:80vw;
+  height:6vh;
+  font-size:1.8vh;
+  
+  text-align: left;
+  color:white;
+  font-weight: bold;
+  background-color: black;
+  gap:50px;
+  padding:5px 20px;
+  margin:10px 2px;
+}
+
+#searchbutton:hover{
+  font-weight: bold;
+  cursor:pointer;
+}
+
+
+
+.sbar{
+  border:none;
+  font-size: 13px;
+  text-decoration: none;
+  background-color:white;
+  color:grey;
+  padding:10px;
+}
+
+
+
+
+
+.png{
+  margin:5px;
+  
+  width:4.8vw;
+}
+
+.bar{
+  margin-top:3px;
+}
+
+
+.img{
+  margin :5px;
+  max-height: 650px;
+  width:580px;
+  margin-bottom:10px;
+}
+
+.likeslide{
+  margin-left:1vw;
+  align-items:center;
+  width:510px;
+  
+}
+
+.lbt{
+  
+  width:3vw;
+}
+
+.rbt{
+  margin-left:20px;
+  width:15vw;
+  height:4vh;
+}
+/*
+.lbt{
+  margin:5px;
+  width:35px;
+  height:35px;
+  font-size:12px;
+}
+
+
+.rbt{
+  float: right;
+  margin:5px;
+  color:white;
+  background-color:black;
+  width:130px;
+  height:35px;
+  font-size: 10px;
+}
+*/
+.boxlogin{
+  top:700px;
+}
+.lgn{
+  
+  width:100%;
+  background-color:white;
+  border-radius:8px;
+  height: 40px;
+  margin:5px;
+  
+}
+
+.title {
+ color: #5C6AC4;
+}
+
+}
