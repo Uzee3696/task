@@ -255,7 +255,7 @@ input[type="checkbox"]:checked + .lbt{
  color: #5C6AC4;
 }
 
-@media screen and (min-width:600px){  
+@media screen and (min-width:1000px){  
  
   body{
   display:inline-block;
@@ -478,4 +478,5 @@ input[type="checkbox"]:checked + .lbt{
 }
 
 }
+
 
